@@ -499,3 +499,78 @@ footer a:hover {
     color: black !important;
     border-color: black !important;
 }
+
+.circle {
+  position: absolute;
+  display: inline-table;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  top: 300px;
+  left: 25px;
+  
+  background-color: #ff3eb5;
+  border-radius: 50%;
+}
+
+.circle__content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        :last-child{
+            margin-left: 10px;
+        }
+    }
+
+
+}
+
+.button-buy {
+    
+  margin-top: 10px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+    
+}
+
+.background-yellow{
+  background-color: #fee600;
+  color: #000000;
+  &:hover{
+    background-color: #ffec3d;
+  }
+}
+.background-black{
+  background-color: #000;
+  color: #fff;
+  &:hover{
+    background-color: #111111;
+  }
+}
+
+

@@ -474,8 +474,7 @@
 .bd-navbar {
   padding: 0.75rem 0;
   background-color: transparent;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
 }
 .bd-navbar::after {
   position: absolute;
@@ -483,7 +482,6 @@
   z-index: -1;
   display: block;
   content: "";
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(var(--bd-violet-rgb), 1)), to(rgba(var(--bd-violet-rgb), 0.95)));
   background-image: linear-gradient(rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
 }
 @media (max-width: 991.98px) {
@@ -504,25 +502,19 @@
   height: 1.5rem;
 }
 .bd-navbar .navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 .bd-navbar .navbar-brand {
   color: #fff;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .bd-navbar .navbar-brand {
-    -webkit-transition: none;
     transition: none;
   }
 }
 .bd-navbar .navbar-brand:hover {
-  -webkit-transform: rotate(-5deg) scale(1.1);
-          transform: rotate(-5deg) scale(1.1);
+  transform: rotate(-5deg) scale(1.1);
 }
 .bd-navbar .navbar-toggler,
 .bd-navbar .nav-link {
@@ -550,8 +542,7 @@
 }
 @media (max-width: 991.98px) {
   .bd-navbar .offcanvas-lg {
-    -webkit-box-shadow: var(--bs-box-shadow-lg);
-            box-shadow: var(--bs-box-shadow-lg);
+    box-shadow: var(--bs-box-shadow-lg);
   }
 }
 .bd-navbar .dropdown-toggle:focus:not(:focus-visible) {
@@ -566,8 +557,7 @@
   --bs-dropdown-font-size: 0.875rem;
   font-size: 0.875rem;
   border-radius: 0.5rem;
-  -webkit-box-shadow: var(--bs-box-shadow);
-          box-shadow: var(--bs-box-shadow);
+  box-shadow: var(--bs-box-shadow);
 }
 .bd-navbar .dropdown-menu li + li {
   margin-top: 0.125rem;
@@ -589,8 +579,7 @@
 }
 
 [data-bs-theme=dark] .bd-navbar {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
 }
 
 :root {
@@ -672,12 +661,10 @@
   .DocSearch-Button, .DocSearch-Button:hover, .DocSearch-Button:focus {
     background: transparent;
     border: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .DocSearch-Button:focus {
-    -webkit-box-shadow: var(--docsearch-searchbox-shadow);
-            box-shadow: var(--docsearch-searchbox-shadow);
+    box-shadow: var(--docsearch-searchbox-shadow);
   }
 }
 
@@ -704,8 +691,7 @@
   margin-right: 0;
   font-size: 0.875rem;
   background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .DocSearch-Commands-Key {
@@ -713,8 +699,7 @@
   font-size: 0.875rem;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .DocSearch-Form {
@@ -745,12 +730,8 @@
 }
 
 .DocSearch-Hit-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .DocSearch-Logo svg .cls-1,
@@ -761,7 +742,6 @@
 .bd-masthead {
   --bd-pink-rgb: 214, 51, 132;
   padding: 3rem 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(var(--bs-body-bg-rgb), 0.01)), color-stop(85%, rgba(var(--bs-body-bg-rgb), 1))), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
   background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
 }
 .bd-masthead h1 {
@@ -846,31 +826,24 @@
   mix-blend-mode: darken;
 }
 .masthead-followup-icon svg {
-  -webkit-filter: drop-shadow(0 1px 1px var(--bs-body-bg));
-          filter: drop-shadow(0 1px 1px var(--bs-body-bg));
+  filter: drop-shadow(0 1px 1px var(--bs-body-bg));
 }
 
 .masthead-notice {
   background-color: var(--bd-accent);
-  -webkit-box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), 0.15), 0 0.25rem 1.5rem rgba(var(--bs-body-bg-rgb), 0.75);
-          box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), 0.15), 0 0.25rem 1.5rem rgba(var(--bs-body-bg-rgb), 0.75);
+  box-shadow: inset 0 -1px 1px rgba(var(--bs-body-color-rgb), 0.15), 0 0.25rem 1.5rem rgba(var(--bs-body-bg-rgb), 0.75);
 }
 
 .animate-img > img {
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .animate-img > img {
-    -webkit-transition: none;
     transition: none;
   }
 }
 .animate-img:hover > img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 [data-bs-theme=dark] .masthead-followup-icon {
@@ -1077,8 +1050,7 @@
 @media (max-width: 991.98px) {
   .bd-sidebar .offcanvas-lg {
     border-right-color: var(--bs-border-color);
-    -webkit-box-shadow: var(--bs-box-shadow-lg);
-            box-shadow: var(--bs-box-shadow-lg);
+    box-shadow: var(--bs-box-shadow-lg);
   }
 }
 
@@ -1093,22 +1065,14 @@
 }
 @media (max-width: 991.98px) {
   .bd-links-nav {
-    -webkit-column-count: 2;
-       -moz-column-count: 2;
-            column-count: 2;
-    -webkit-column-gap: 1.5rem;
-       -moz-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    column-count: 2;
+    column-gap: 1.5rem;
   }
   .bd-links-nav .bd-links-group {
-    -webkit-column-break-inside: avoid;
-       -moz-column-break-inside: avoid;
-            break-inside: avoid;
+    break-inside: avoid;
   }
   .bd-links-nav .bd-links-span-all {
-    -webkit-column-span: all;
-       -moz-column-span: all;
-            column-span: all;
+    column-span: all;
   }
 }
 
@@ -1222,18 +1186,12 @@
 }
 
 .bd-toc-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 @media (max-width: 575.98px) {
   .bd-toc-toggle {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     width: 100%;
   }
 }
@@ -1249,8 +1207,7 @@
     border-color: var(--bd-violet);
   }
   .bd-toc-toggle:focus, .bd-toc-toggle[aria-expanded=true] {
-    -webkit-box-shadow: 0 0 0 3px rgba(var(--bd-violet-rgb), 0.25);
-            box-shadow: 0 0 0 3px rgba(var(--bd-violet-rgb), 0.25);
+    box-shadow: 0 0 0 3px rgba(var(--bd-violet-rgb), 0.25);
   }
 }
 
@@ -1405,19 +1362,15 @@
 .example-row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
 .example-content-main {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -1426,24 +1379,19 @@
 }
 @media (min-width: 576px) {
   .example-content-main {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
   .example-content-main {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 66.66666667%;
   }
 }
 
 .example-content-secondary {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -1452,17 +1400,13 @@
 }
 @media (min-width: 576px) {
   .example-content-secondary {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
   .example-content-secondary {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 33.33333333%;
   }
 }
@@ -1475,15 +1419,9 @@
   border: var(--bs-border-width) solid var(--bs-border-color);
 }
 .bd-example-ratios .ratio > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .bd-example-ratios-breakpoint .ratio-4x3 {
@@ -1500,8 +1438,7 @@
   display: block;
   height: 200px;
   visibility: visible;
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  transform: translate(0);
 }
 
 .tooltip-demo a {
@@ -1811,7 +1748,6 @@
   white-space: pre;
   content: "4.50" "\a" "4.50" "\a" "4.66";
   background-color: #0d6efd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1831,7 +1767,6 @@
   white-space: pre;
   content: "7.18" "\a" "7.18" "\a" "2.92";
   background-color: #6610f2;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1851,7 +1786,6 @@
   white-space: pre;
   content: "6.51" "\a" "6.51" "\a" "3.22";
   background-color: #6f42c1;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1871,7 +1805,6 @@
   white-space: pre;
   content: "4.50" "\a" "4.50" "\a" "4.66";
   background-color: #d63384;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1891,7 +1824,6 @@
   white-space: pre;
   content: "4.52" "\a" "4.52" "\a" "4.63";
   background-color: #dc3545;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1911,7 +1843,6 @@
   white-space: pre;
   content: "8.17" "\a" "2.57" "\a" "8.17";
   background-color: #fd7e14;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #000), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1931,7 +1862,6 @@
   white-space: pre;
   content: "12.8" "\a" "1.63" "\a" "12.8";
   background-color: #ffc107;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #000), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1951,7 +1881,6 @@
   white-space: pre;
   content: "4.53" "\a" "4.53" "\a" "4.63";
   background-color: #198754;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1971,7 +1900,6 @@
   white-space: pre;
   content: "9.86" "\a" "2.12" "\a" "9.86";
   background-color: #20c997;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #000), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -1991,7 +1919,6 @@
   white-space: pre;
   content: "10.7" "\a" "1.95" "\a" "10.7";
   background-color: #0dcaf0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #000), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -2011,7 +1938,6 @@
   white-space: pre;
   content: "21" "\a" "21" "\a" "1";
   background-color: #000;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -2031,7 +1957,6 @@
   white-space: pre;
   content: "21" "\a" "1" "\a" "21";
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #000), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -2051,7 +1976,6 @@
   white-space: pre;
   content: "4.68" "\a" "4.68" "\a" "4.47";
   background-color: #6c757d;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -2071,7 +1995,6 @@
   white-space: pre;
   content: "11.5" "\a" "11.5" "\a" "1.82";
   background-color: #343a40;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #fff), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #fff 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -2091,7 +2014,6 @@
   white-space: pre;
   content: "10.1" "\a" "2.07" "\a" "10.1";
   background-color: #adb5bd;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.25rem, transparent), color-stop(0.25rem, #000), color-stop(0.75rem, transparent), color-stop(1.25rem, #fff), color-stop(1.75rem, transparent), color-stop(2.25rem, #000), color-stop(2.75rem, transparent));
   background-image: linear-gradient(to bottom, transparent 0.25rem, #000 0.25rem 0.75rem, transparent 0.75rem 1.25rem, #fff 1.25rem 1.75rem, transparent 1.75rem 2.25rem, #000 2.25rem 2.75rem, transparent 2.75rem);
   background-repeat: no-repeat;
   background-size: 0.5rem 100%;
@@ -2647,10 +2569,7 @@
 
 .bd-placeholder-img {
   font-size: 1.125rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   text-anchor: middle;
 }
 
@@ -2988,18 +2907,12 @@ main [tabindex="0"] {
 .chroma .language-sh .line::before {
   color: var(--base03);
   content: "$ ";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .chroma .language-powershell::before {
   color: var(--base0C);
   content: "PM> ";
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .anchor-link {
@@ -3008,12 +2921,10 @@ main [tabindex="0"] {
   color: rgba(13, 110, 253, 0.5);
   text-decoration: none;
   opacity: 0;
-  -webkit-transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .anchor-link {
-    -webkit-transition: none;
     transition: none;
   }
 }
@@ -3024,4 +2935,4 @@ main [tabindex="0"] {
   color: #0d6efd;
   text-decoration: none;
   opacity: 1;
-}/*# sourceMappingURL=docs.css.map */
+}
