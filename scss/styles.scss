@@ -216,6 +216,13 @@ strong {
         background-image: url(../img/header-cielo.jpg);
         height: 822px;
     }
+    .banner-header__arg {
+        background-size: 2560px 822px;        
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-image: url(../img/arg/header-cielo.jpg);
+        height: 822px;
+    }
 }
 @media (min-width: 992px) and (max-width:1399px)  {
     .banner-header {
@@ -223,6 +230,14 @@ strong {
         background-repeat: no-repeat;
         background-position: center top;
         background-image: url(../img/header-cielo.jpg);
+        height: 580px;
+    }
+
+    .banner-header__arg {
+        background-size: auto 580px;        
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-image: url(../img/arg/header-cielo.jpg);
         height: 580px;
     }
 
@@ -246,7 +261,20 @@ strong {
         margin-top: -79px;
     }
 
+    .banner-header__arg {
+        background-color: #193242;
+        background-size: cover;        
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-image: url(../img/cielo-mobile.jpg);
+        margin-top: -79px;
+    }
+
     .banner-header .logo-barbie {
+        padding-top: 100px;
+    }
+
+    .banner-header__arg .logo-barbie {
         padding-top: 100px;
     }
 
