@@ -216,6 +216,24 @@ strong {
         background-image: url(../img/header-cielo.jpg);
         height: 822px;
     }
+    .banner-header__mx {
+        background-size: 2560px 822px;        
+        background-repeat: no-repeat;
+        background-position: center top;
+
+        background-image:
+            linear-gradient(
+                to left,
+                rgba(3, 8, 20, 0.85) 0%,
+                rgba(3, 8, 20, 0.55) 50%,
+                rgba(3, 8, 20, 0.0) 60%,
+
+            ),
+            url(../img/banner-header-desktop_mundial.webp);
+
+        height: 822px;
+
+    }
     .banner-header__arg {
         background-size: 2560px 822px;        
         background-repeat: no-repeat;
@@ -238,6 +256,13 @@ strong {
         background-repeat: no-repeat;
         background-position: center top;
         background-image: url(../img/arg/header-cielo.jpg);
+        height: 580px;
+    }
+    .banner-header__mx {
+        background-size: auto 580px;        
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-image: url(../img/banner-header-desktop_mundial.png);
         height: 580px;
     }
 
@@ -270,10 +295,31 @@ strong {
         margin-top: -79px;
     }
 
+    .banner-header__mx {
+        
+        background-size: cover;        
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-image:
+            linear-gradient(
+                to bottom,
+                rgba(3, 8, 20, 0.85) 0%,
+                rgba(3, 8, 20, 0.55) 50%,
+                rgba(3, 8, 20, 0.0) 60%,
+
+            ),
+            url(../img/img-fondo-mobil-mundial.webp);
+        margin-top: -79px;
+    }
+
+    
     .banner-header .logo-barbie {
         padding-top: 100px;
     }
 
+    .banner-header__mx .logo-barbie {
+        padding-top: 100px;
+    }
     .banner-header__arg .logo-barbie {
         padding-top: 100px;
     }
